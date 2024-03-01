@@ -5,6 +5,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import CustomButton from './CustomButton';
 import SocialIcons from './SocialIcons';
 
+
 const Header = () => {
   return (
     <div className='container-fluid container d-flex justify-content-between align-items-center text-light py-3'>
@@ -20,15 +21,15 @@ const Header = () => {
         <div className='mx-2'>
           <CustomButton title="Login" />
         </div>
-        <Dropdown className='mx-2'>
-          <Dropdown.Toggle className='btn btn-light border-0' variant='dark' id="dropdown-basic">
-            Dropdown Button
+        <Dropdown className='mx-3'>
+          <Dropdown.Toggle className='btn btn-light border-0'  variant='dark' id="dropdown-basic">
+          English
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+            <Dropdown.Item >German</Dropdown.Item>
+            <Dropdown.Item >French</Dropdown.Item>
+            <Dropdown.Item ></Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
       </div>

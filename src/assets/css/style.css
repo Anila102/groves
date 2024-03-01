@@ -62,7 +62,14 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 
 }
-
+.dropdown-toggle::after {
+    position: absolute;
+    right: calc(100% + 5px); 
+    top: 50%;
+    transform: translateY(-50%);
+}#dropdown-basic{
+    background-color: transparent;
+}
 .nav-items {
     color: rgb(210, 210, 210);
     text-decoration: none;
