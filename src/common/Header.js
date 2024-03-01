@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.png';
-import Dropdown from 'react-bootstrap/Dropdown';
 import CustomButton from './CustomButton';
 import SocialIcons from './SocialIcons';
-
+import LanguageDropdown from './LanguageDropdown';
 
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  // Function to toggle menu visibility
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <div className='container-fluid container d-flex justify-content-between align-items-center text-light py-3'>
       <div>
@@ -14,24 +20,55 @@ const Header = () => {
           <img style={{ width: '150px' }} src={logo} alt='' />
         </Link>
       </div>
-      <div className='d-flex align-items-center'>
+      <div className='d-flex align-items-center d-lg-none'>
+        <button className='hamburger-icon-button' onClick={toggleMenu}>
+          <i class="fa fa-bars"></i>
+        </button>
+
+      </div>
+      {/* Display social icons, login button, and language dropdown on large screens */}
+      <div className='d-none d-lg-flex align-items-center'>
         <div className='mx-2'>
           <SocialIcons />
         </div>
         <div className='mx-2'>
           <CustomButton title="Login" />
         </div>
-        <Dropdown className='mx-3'>
-          <Dropdown.Toggle className='btn btn-light border-0'  variant='dark' id="dropdown-basic">
-          English
-          </Dropdown.Toggle>
-
-          <Dropdown.Menu>
-            <Dropdown.Item >German</Dropdown.Item>
-            <Dropdown.Item >French</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
+        <LanguageDropdown />
       </div>
+      {/* Conditionally render menu on small screens */}
+      {showMenu && (
+        <>
+
+          <div className='sidebar-menu '>
+
+            <div className='sidebar-content'>
+              <div className='logo-container my-3 mx-5'>
+                <Link to='/'>
+                  <img style={{ width: '150px' }} src={logo} alt='' />
+                </Link>
+                <button className='hamburger-icon-button' onClick={toggleMenu}>
+                  <i className="fa fa-close"></i>
+                </button>
+              </div>
+
+              <Link to='/' className='nav-item px-4 py-3  spacing'>DINE WITH US</Link>
+              <Link to='/' className='nav-item px-4 py-3  spacing'>PLAN WITH US</Link>
+              <Link to='/' className='nav-item px-4 py-3  spacing'>EVENTS</Link>
+              <Link to='/' className='nav-item px-4 py-3  spacing'>VIEW GROVES MAP</Link>
+              <Link to='/' className='nav-item px-4 py-3  spacing'>OUR STORY</Link>
+              <Link to='/' className='nav-item px-4 py-3  spacing'>CONTACT US</Link>
+            </div>
+            <div className='px-3 my-3 mx-3'>
+              <LanguageDropdown />
+              <CustomButton title="Login" classname='my-3 ' />
+
+            </div>
+
+          </div>
+        </>
+      )}
+
     </div>
   );
 };

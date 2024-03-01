@@ -21,7 +21,7 @@ const Restaurants = () => {
     }];
 
     return (
-            <div className='row my-5'>
+            <div className='row my-lg-5 my-2'>
                 {restaurants.map((item, index) => (
                     <div key={index} className='col-lg-6'>
                         <RestrauntItem title={item.title} image={item.image} />

@@ -5,11 +5,12 @@ import CustomButton from '../../../../common/CustomButton'
 const MapSection = () => {
     return (
         <div className='container '>
-            <div className='row '>
+         <div className='row map-small'>
+
                 <div className='col-lg-6 map'>
                     <img src={Map} alt='' />
                 </div>
-                <div className='col-lg-6 p-5  text-white d-flex flex-column justify-content-center  flex-wrap'>
+                <div className='col-lg-6 p-lg-5 p-3  text-white d-flex flex-column justify-content-center  flex-wrap'>
                     <div className='align-items-center'>
                         <div className=''>
                             EXPERIENCE THE GROVES</div>

@@ -32,7 +32,7 @@ const Slider = () => {
               eiusmod tempor ut labore.
             </p>
            <div className='my-4 mb-3 '>
-            <CustomButton title='Book reservation now' classname='w-50' />
+            <CustomButton title='Book reservation now' classname='w-lg-50 w-100' />
            </div>
 
           </motion.div>

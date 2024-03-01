@@ -16,7 +16,7 @@ const Places = () => {
         <h3 className='text-center text-white px-2 my-4'>Hawanim Groves <br />City</h3>
 
       </div>
-      <div className='box box-3 mx-2 mb-5'>
+      <div className='box box-3 mx-2 mb-lg-5'>
         <img src={box3} alt='' /> 
         <h3 className='text-center text-white px-2 my-4'>Picnic Market</h3>
 
