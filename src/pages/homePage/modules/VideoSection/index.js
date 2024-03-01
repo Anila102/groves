@@ -9,8 +9,6 @@ const VideoSection = () => {
         <div className='video-container my-5'>
         <iframe
           className='video-frame'
-          width='307'
-          height='502'
           src='https://youtube.com/embed/fXAUnwKbE4o?si=dwX8sRdfujeaOQ1l'
           title='YouTube Video'
           frameborder='0'
