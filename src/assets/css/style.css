@@ -8,7 +8,9 @@ html {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif !important;
 }
-
+.display-font{
+    font-family: 'Playfair Display', serif !important;
+}
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     font-size: 16px;
@@ -55,7 +57,9 @@ body {
 .custom-btn {
     border-radius: 16px !important;
     opacity: 1;
-    background: linear-gradient(to bottom, #ad8749, #dcbb75) !important;
+    /* background: linear-gradient(to bottom, #ad8749, #dcbb75) !important; */
+    background: linear-gradient(4deg, rgba(218,185,115,1) 0%, rgba(181,144,81,1) 47%) !important;
+    
     color: white !important;
     width: 142px !important;
     height: 45px !important;
@@ -95,8 +99,8 @@ body {
 }
 
 .carousel-indicators {
-    display: flex;
-    justify-content: flex-end;
+    display: flex !important;
+    justify-content: flex-end !important;
 }
 
 .carousel-control-next {
@@ -108,9 +112,9 @@ body {
 
 }
 
-.carousel-item {
-    background-color: black;
-    opacity: 0.1;
+.shade {
+    background-color: black !important;
+    opacity: 0.5 !important;
 }
 
 .primary-bg {
@@ -156,7 +160,6 @@ body {
 
 .box {
     transition: transform 0.3s ease-in-out;
-
 }
 
 .box:hover {
@@ -260,8 +263,12 @@ footer p{
         margin: 5px; 
     }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1350px) {
     .container {
         max-width: 1200px; /* Limit container width for larger screens */
+    }
+    .container-left{
+        margin: auto;
+        overflow:visible;
     }
 }

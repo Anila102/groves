@@ -7,13 +7,13 @@ import box4 from '../../../../../assets/images/box4.png'
 const Places = () => {
   return (
     <div className='container-left d-flex align-items-center my-4'>
-      <div className='box box-1 me-5'>
+      <div className='box box-1 me-4'>
         <img src={box1} alt='' /> 
         <h3 className='text-center text-white px-2 my-4'>Little Krazy</h3>
       </div>
       <div className='box box-2 mx-2'>
         <img src={box2} alt='' /> 
-        <h3 className='text-center text-white px-2 my-4'>Hawanim Groves City</h3>
+        <h3 className='text-center text-white px-2 my-4'>Hawanim Groves <br />City</h3>
 
       </div>
       <div className='box box-3 mx-2 mb-5'>

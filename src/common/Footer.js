@@ -6,7 +6,7 @@ import PaymentIcons from './PaymentIcons'
 
 const Footer = () => {
     return (
-        <div className='partition'>
+        <div className='partition container'>
             <div className='container my-5'>
                 <div className='d-flex justify-content-between text-white'>
                     <h1>Join us for an <br /> unforgettable experience</h1>

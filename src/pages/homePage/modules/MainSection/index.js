@@ -6,15 +6,15 @@ const MainSection = () => {
     return (
         <div className='row col-lg-6'>
             <Carousel style={{height:'650px'}}>
-                <Carousel.Item className='d-flex justify-content-center align-items-center' style={{height:'650px'}}>
+                <Carousel.Item className='d-flex justify-content-center align-items-center ' style={{height:'650px'}}>
                     <Slider />
 
                 </Carousel.Item>
-                <Carousel.Item className='d-flex justify-content-center align-items-center' style={{height:'650px'}}>
+                <Carousel.Item className='d-flex justify-content-center align-items-center ' style={{height:'650px'}}>
                     <Slider />
 
                 </Carousel.Item>
-                <Carousel.Item className='d-flex justify-content-center align-items-center' style={{height:'650px'}}>
+                <Carousel.Item className='d-flex justify-content-center align-items-center ' style={{height:'650px'}}>
                     <Slider />
 
                 </Carousel.Item>

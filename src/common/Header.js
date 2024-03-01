@@ -29,7 +29,6 @@ const Header = () => {
           <Dropdown.Menu>
             <Dropdown.Item >German</Dropdown.Item>
             <Dropdown.Item >French</Dropdown.Item>
-            <Dropdown.Item ></Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
       </div>

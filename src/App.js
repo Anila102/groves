@@ -1,7 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./common/Header";
-import SubHeader from "./common/SubHeader";
-import HomePage from "./pages/homePage/HomePage";
+import React, { Suspense } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './common/Header';
+import SubHeader from './common/SubHeader';
+
+const HomePage = React.lazy(() => import('./pages/homePage/HomePage'));
 
 function App() {
   return (
@@ -10,11 +12,12 @@ function App() {
         <div className='background'>
           <Header />
           <SubHeader />
-
         </div>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+          </Routes>
+        </Suspense>
       </Router>
     </div>
   );

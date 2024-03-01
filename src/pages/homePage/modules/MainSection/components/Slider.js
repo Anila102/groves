@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import CustomButton from "../../../../../common/CustomButton";
 
 const Slider = () => {
   const fadeInRightVariants = {
@@ -18,21 +19,22 @@ const Slider = () => {
             animate="animate"
             variants={fadeInRightVariants}
             transition={{ duration: 0.5 }}
+            className="text-white"
           >
-            <div className="spacer-10"></div>
-            <div className="h1 ">
-              Help to improve focus
+           <div className='my-2 mb-3 text-uppercase spacing'>Khawaja Yanni</div>
+            <div className="font-50 display-font">
+             The new
               <br />
-              for more
+            era of luxury
             </div>
-            <p className="lead">
+            <p className="lead mt-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua ut
-              enim.
+              eiusmod tempor ut labore.
             </p>
-            <div className="spacer-20"></div>
+           <div className='my-4 mb-3 '>
+            <CustomButton title='Book reservation now' classname='w-50' />
+           </div>
 
-            <div className="mb-sm-30"></div>
           </motion.div>
           <motion.div
             initial="initial"
