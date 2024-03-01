@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+html {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif !important;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 16px;
+    font-weight: 400;
+    color: #595d69;
+    line-height: 1.7em;
+    padding: 0;
+    margin: 0 ; /* Center the container horizontally */ 
+
+}
+
+.bg-image {
+    height: 800px;
+    background-image: url('../images/main.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0px 60px !important;
+}
+
+
+.container-left {
+    max-width: 1320px;
+    margin: 0 0 0 130px;
+    padding: 0px 60px 0px 0px !important;
+    overflow-x:hidden; /* Allow horizontal scrolling if necessary */
+    white-space: nowrap;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.custom-btn {
+    border-radius: 16px !important;
+    opacity: 1;
+    background: linear-gradient(to bottom, #ad8749, #dcbb75) !important;
+    color: white !important;
+    width: 142px !important;
+    height: 45px !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+
+}
+
+.nav-items {
+    color: rgb(210, 210, 210);
+    text-decoration: none;
+    font-weight: medium;
+}
+
+.subheader-border {
+    border-top: 0.75px solid rgb(210, 210, 210);
+    border-bottom: 0.75px solid rgb(210, 210, 210);
+    opacity: 0.85;
+
+}
+
+.header-opacity {
+    background-color: black;
+    opacity: 0.52;
+}
+
+.carousel-indicators button {
+    border-radius: 50%;
+    width: 8px !important;
+    height: 8px !important;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.carousel-control-next {
+    display: none !important;
+}
+
+.carousel-control-prev {
+    display: none !important;
+
+}
+
+.carousel-item {
+    background-color: black;
+    opacity: 0.1;
+}
+
+.primary-bg {
+    background: linear-gradient(97deg, rgba(40, 54, 6, 1) 0%, rgba(15, 21, 0, 1) 100%);
+}
+
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.video-text {
+    font-size: 15px;
+    color: rgb(255, 255, 255, 1);
+    text-align-last: center;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+.video-head {
+    color: rgb(255, 255, 255, 1);
+    line-height: 2;
+}
+
+.access-ticket-card {
+    border-radius: 25px;
+    opacity: 1;
+    backdrop-filter: blur(30px);
+    background: linear-gradient(270deg, rgba(15, 21, 0, 0.01) 0%, rgba(38, 46, 17, 1) 0%, rgba(40, 49, 17, 1) 9%, rgba(43, 54, 18, 1) 26%, rgba(46, 58, 19, 1) 47%, rgba(50, 63, 20, 1) 100%);
+    -webkit-backdrop-filter: blur(30px);
+    /* filter: blur(6px); */
+    margin: 0px 60px !important;
+
+}
+
+.access-ticket-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.access-ticket-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.box {
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.box:hover {
+    transform: scale(1.05);
+    cursor: pointer
+}
+
+.box1 img {
+    width: 385px !important;
+    height: 526px !important;
+}
+
+.box2 img {
+    width: 291px !important;
+    height: 402px !important;
+}
+
+.box-3 img {
+    width: 385px !important;
+    height: 526px !important;
+}
+
+.box-4 img {
+    width: 291px !important;
+    height: 402px !important;
+}
+
+
+@media only screen and (max-width: 859px) {
+    .container {
+        padding: 0 15px;
+    }
+
+}
+
+.map img {
+    width: 577px !important;
+    height: 553px !important;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+
+    border-radius: 38px !important;
+    opacity: 1;
+    backdrop-filter: blur(30px);
+    border: 0 !important;
+    background: rgb(49, 61, 19) !important;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointert;
+}
+
+.card img {
+    border-radius: 32px 32px 0px 0px;
+    opacity: 1;
+    background: transparent !important;
+}
+
+.bgcolor-brown {
+    background-color: #AD8749;
+    border-radius: 23px;
+    letter-spacing: 1px
+}
+.spacing{
+    letter-spacing: 1px !important; 
+}
+.spacing2{
+    letter-spacing: 2px !important; 
+}
+.font-50 {
+    font-size: 50px;
+}
+.partition{
+    border-top: 2px solid #3D4230;
+}
+footer p{
+    margin: 0;
+    font-size: 14px;
+}
+.bottom-bar span{
+    font-size: 14px;
+}
+@media only screen and (min-width: 859px) {
+
+    .access-ticket-card {
+        width: 1050px;
+    }
+}
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 0 15px; 
+    }
+    .subheader-border {
+        padding: 0 15px; 
+    }
+    .nav-items {
+        margin: 5px; 
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px; /* Limit container width for larger screens */
+    }
+}
