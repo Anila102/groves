@@ -4,6 +4,8 @@ import logo from '../assets/images/logo.png';
 import CustomButton from './CustomButton';
 import SocialIcons from './SocialIcons';
 import LanguageDropdown from './LanguageDropdown';
+import menu from '../assets/images/icon-menu.svg'
+import closeIcon from '../assets/images/close.svg'
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -21,9 +23,9 @@ const Header = () => {
         </Link>
       </div>
       <div className='d-flex align-items-center d-lg-none'>
-        <button className='hamburger-icon-button' onClick={toggleMenu}>
-          <i class="fa fa-bars"></i>
-        </button>
+        {/* <button className='bg-none' */}
+       <img src={menu}  alt=''  onClick={toggleMenu} />
+        {/* </button> */}
 
       </div>
       {/* Display social icons, login button, and language dropdown on large screens */}
@@ -47,9 +49,7 @@ const Header = () => {
                 <Link to='/'>
                   <img style={{ width: '150px' }} src={logo} alt='' />
                 </Link>
-                <button className='hamburger-icon-button' onClick={toggleMenu}>
-                  <i className="fa fa-close"></i>
-                </button>
+               <img src={closeIcon} alt='' onClick={toggleMenu} />
               </div>
 
               <Link to='/' className='nav-item px-4 py-3  spacing'>DINE WITH US</Link>

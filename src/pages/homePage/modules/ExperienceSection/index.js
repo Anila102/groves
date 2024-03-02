@@ -6,9 +6,9 @@ const ExperienceSection = () => {
     return (
         <div className='container-left '>
             <div className='row '>
-                <div className='col-lg-3 d-flex justify-content-center align-items-center px-4 flex-column text-white text-lg-center text-start'>
+                <div className='col-lg-3 d-flex justify-content-lg-center justify-content-start align-items-lg-center align-items-start px-4 flex-column text-white text-lg-center text-start'>
                     <h1 className='text-lg-center text-start mylg-3 my-1'>Curate your <br />experience<br /> as you like</h1>
-                    <CustomButton classname='w-75 py-2 my-4' title='Book General Access Ticket' />
+                    <CustomButton classname='w-lg-100 w-75 py-2 my-4' isArrow={true} title='Book General Access Ticket' />
                 </div>
                 <div className='col-lg-9'>
                 <ExperienceItem />

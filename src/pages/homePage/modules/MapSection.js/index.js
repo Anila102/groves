@@ -16,7 +16,7 @@ const MapSection = () => {
                             EXPERIENCE THE GROVES</div>
                         <h1 className='my-4'>Find your place</h1>
                         <div>Our interactive map will show you the way to the shops and restraunts that you want to see.</div>
-                        <CustomButton title='Open the Map' classname='w-50 px-2 py-1 my-5' />
+                        <CustomButton title='Open the Map' isArrow={true} classname='w-50 px-2 py-1 my-5' />
                     </div>
                 </div>
             </div>
