@@ -13,7 +13,7 @@ const Slider = () => {
   };
 
   return (
-        <div className="p-5 m-5">
+        <div className="p-lg-5 m-lg-5 p-3 m-3">
           <motion.div
             initial="initial"
             animate="animate"
