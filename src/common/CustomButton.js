@@ -4,7 +4,7 @@ import arrow from '../assets/images/arrow.png'
 const CustomButton = ({ title, classname, isArrow }) => {
   return (
     <>
-      <button className={`btn custom-btn ${isArrow && 'd-flex justify-content-between align-items-center'} ${classname}`}>
+      <button className={`btn custom-btn ${isArrow && 'd-flex justify-content-between align-items-center ps-lg-3'} ${classname}`}>
         {isArrow ? (
           <>
             <span>{title}</span>

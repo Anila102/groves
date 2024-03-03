@@ -5,7 +5,7 @@ import CustomButton from '../../../../common/CustomButton'
 const MapSection = () => {
     return (
         <div className='container '>
-         <div className='row map-small'>
+         <div className='row map-small flex-lg-row'>
 
                 <div className='col-lg-6 map'>
                     <img src={Map} alt='' />
